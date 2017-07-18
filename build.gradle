@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.5.3.RELEASE'
+		springBootVersion = '1.5.4.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -28,8 +28,11 @@ ext {
 
 dependencies {
 	compile 'org.springframework.boot:spring-boot-starter-actuator',
-	        'org.springframework.cloud:spring-cloud-starter-eureka',
 	        'org.springframework.boot:spring-boot-starter-web',
+	        
+	        'org.springframework.cloud:spring-cloud-starter-eureka',
+	        'org.springframework.cloud:spring-cloud-starter-sleuth',
+		    'org.springframework.cloud:spring-cloud-starter-zipkin',
 	        
 	        'be.ordina:microservices-dashboard-server:1.0.1',
             'be.ordina:microservices-dashboard-ui:1.0.1',
